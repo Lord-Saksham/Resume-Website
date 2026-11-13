@@ -1,0 +1,212 @@
+/* ===== Palette =====
+   ink #172036 | cobalt #2b4de0 | mist #eef1f8 | paper #fbfbfd | slate #4a5568 */
+
+/* ===== Base (element selectors) ===== */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* keeps headings clear of the sticky nav */
+}
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #172036;
+    background-color: #fbfbfd;
+}
+h1, h2, h3 {
+    font-family: 'Fraunces', serif;
+    line-height: 1.2;
+    margin: 0 0 12px;
+}
+h1 { font-size: 3.2rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.25rem; }
+p {
+    max-width: 65ch; /* keeps lines a comfortable length */
+    margin: 0 0 16px;
+}
+a { color: #2b4de0; }
+a:focus-visible {
+    outline: 3px solid #2b4de0;
+    outline-offset: 2px;
+}
+
+/* ===== Navigation bar (position + flexbox) ===== */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 40px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #d8dded;
+}
+.brand {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #172036;
+    text-decoration: none;
+}
+nav a {
+    display: inline-block;
+    padding: 8px 14px;
+    margin-left: 4px;
+    color: #172036;
+    text-decoration: none;
+    border-radius: 20px;
+}
+nav a:hover {
+    background-color: #2b4de0;
+    color: #ffffff;
+}
+nav a:active {
+    background-color: #1b33a8;
+}
+
+/* ===== Page layout ===== */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+section {
+    padding: 56px 0;
+}
+section h2 {
+    border-left: 6px solid #2b4de0;
+    padding-left: 14px;
+    margin-bottom: 24px;
+}
+
+/* ===== Hero (ID selector) ===== */
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 72px;
+}
+.tagline {
+    font-size: 1.3rem;
+    color: #4a5568;
+}
+.button {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #172036;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.button:hover {
+    background-color: #2b4de0;
+}
+.photo-placeholder,
+.photo {
+    flex-shrink: 0;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+}
+.photo { object-fit: cover; }
+.photo-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b4de0;
+    color: #ffffff;
+    font-family: 'Fraunces', serif;
+    font-size: 4rem;
+}
+
+/* ===== Education ===== */
+.entry {
+    background-color: #eef1f8;
+    padding: 20px 24px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+.entry p:last-child { margin-bottom: 0; }
+.meta {
+    color: #4a5568;
+    font-size: 0.95rem;
+}
+
+/* ===== Projects (grid + two classes on one element) ===== */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+.card {
+    background-color: #ffffff;
+    border: 1px solid #d8dded;
+    border-radius: 6px;
+    padding: 24px;
+}
+.card-muted {
+    background-color: #eef1f8;
+    border-style: dashed;
+}
+.tools {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #4a5568;
+}
+
+/* ===== Interests ===== */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.tags li {
+    padding: 10px 20px;
+    background-color: #eef1f8;
+    border-radius: 30px;
+}
+
+/* ===== Footer ===== */
+footer {
+    padding: 28px 0;
+    text-align: center;
+    color: #4a5568;
+    background-color: #eef1f8;
+}
+footer p {
+    max-width: none;
+    margin: 0;
+}
+
+/* ===== Mobile layout (media query) ===== */
+@media (max-width: 700px) {
+    .site-header {
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px 16px;
+    }
+    nav a {
+        padding: 6px 10px;
+        margin: 0;
+    }
+    #hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 40px;
+    }
+    h1 { font-size: 2.4rem; }
+    .photo-placeholder,
+    .photo {
+        width: 160px;
+        height: 160px;
+    }
+    .photo-placeholder { font-size: 3rem; }
+}
