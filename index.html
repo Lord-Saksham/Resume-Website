@@ -6,16 +6,16 @@
     <title>Saksham Singh | Resume</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Fraunces:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="site-header">
-        <a class="brand" href="#hero">Saksham Singh</a>
+        <a class="brand" href="#hero"><span class="logo">S</span>Saksham Singh</a>
         <nav>
             <a href="#about">About</a>
-            <a href="#education">Education</a>
             <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
             <a href="#projects">Projects</a>
             <a href="#interests">Interests</a>
         </nav>
@@ -23,67 +23,118 @@
 
     <main>
         <section id="hero">
-            <div>
-                <h1>Saksham Singh</h1>
-                <p class="tagline">BBA &amp; Spanish Student | Figuring it out</p>
-                <a class="button" href="#about">Read about me</a>
+            <div class="wrap hero-grid">
+                <div class="hero-text">
+                    <p class="pill">BBA &amp; Spanish Student | Figuring it out</p>
+                    <h1>Saksham Singh.<br><em>Curious by default.</em></h1>
+                    <p class="lead">Two degrees, one very curious mind. I like learning new things, meeting new people and keeping a good balance between hard work and having fun.</p>
+                    <div class="actions">
+                        <a class="button" href="#experience">See my experience &rarr;</a>
+                        <a class="button button-ghost" href="#about">About me</a>
+                    </div>
+                </div>
+                <figure class="hero-photo">
+                    <img src="images/photo.webp" alt="Portrait of Saksham Singh smiling in front of a green plant wall" width="480" height="480">
+                    <figcaption class="float-card"><strong>800+</strong> delegates at the MUN I helped organise</figcaption>
+                </figure>
             </div>
-            <img class="photo" src="images/photo.webp" alt="Portrait of Saksham Singh" width="240" height="240">
+        </section>
+
+        <section class="stats">
+            <ul class="wrap">
+                <li><strong>2</strong> degrees, studied together</li>
+                <li><strong>6</strong> MUN involvements</li>
+                <li><strong>800+</strong> delegates managed at a MUN</li>
+            </ul>
         </section>
 
         <section id="about">
-            <h2>About me</h2>
-            <p>I'm a first-year student building two degrees side by side: BA (Hons) Spanish at Jawaharlal Nehru University and a BBA in Digital Business and Entrepreneurship at IIM Bangalore. One teaches me to think in another language and culture. The other teaches me how businesses are built and run.</p>
-            <p>I learn best by reading, trying new things and talking to people who see the world differently. I'm using these years to explore where my interests meet, and I'm still figuring out exactly where I'm headed. I treat that as a reason to stay curious, not a reason to wait.</p>
+            <div class="wrap about-grid">
+                <h2>A bit about <em>me</em></h2>
+                <div>
+                    <p>I'm a first-year student building two degrees side by side: BA (Hons) Spanish at Jawaharlal Nehru University and a BBA in Digital Business and Entrepreneurship at IIM Bangalore. One teaches me to think in another language and culture. The other teaches me how businesses are built and run.</p>
+                    <p>I love learning new things, and I'm a social person who is happiest around new people and new ideas. I'm also pretty chill: I take my work seriously, and I know how to switch off and enjoy life too. I'm still figuring out exactly where I'm headed, and I treat that as a reason to stay curious, not a reason to wait.</p>
+                    <ul class="tags">
+                        <li>Always learning</li>
+                        <li>Social</li>
+                        <li>Chill</li>
+                        <li>Work hard, enjoy more</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="dark">
+            <div class="wrap">
+                <h2>Experience</h2>
+                <div class="cards">
+                    <article class="card card-dark">
+                        <h3>The Indian Summit Foundation: Secretariat</h3>
+                        <ul>
+                            <li>Helped organise the Model United Nations (MUN) conference.</li>
+                            <li>Handled crowd control for 800+ delegates.</li>
+                        </ul>
+                    </article>
+                    <article class="card card-dark">
+                        <h3>Model United Nations (MUN)</h3>
+                        <p>Six MUN involvements across committees, including:</p>
+                        <ul class="tags tags-dark">
+                            <li>UNHRC</li>
+                            <li>OPEC</li>
+                            <li>CBFC</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
         </section>
 
         <section id="education">
-            <h2>Education</h2>
-            <article class="entry">
-                <h3>Bachelor of Business Administration in Digital Business and Entrepreneurship (BBA-DBE)</h3>
-                <p class="meta">Indian Institute of Management Bangalore | 2026 &ndash; Present</p>
-                <p>Studying how digital businesses are designed and run, with courses such as Website Development.</p>
-            </article>
-            <article class="entry">
-                <h3>BA (Hons) Spanish</h3>
-                <p class="meta">Jawaharlal Nehru University (JNU), New Delhi | 2026 &ndash; Present</p>
-                <p>Studying the Spanish language along with the culture and civilisation of the Spanish-speaking world.</p>
-            </article>
-        </section>
-
-        <section id="experience">
-            <h2>Experience</h2>
-            <p>I'm at the start of my journey and don't have formal work experience yet. Right now I'm building skills through my degrees, projects like this website, and the habits listed below.</p>
+            <div class="wrap">
+                <h2>Education</h2>
+                <div class="cards">
+                    <article class="card">
+                        <h3>Bachelor of Business Administration in Digital Business and Entrepreneurship (BBA-DBE)</h3>
+                        <p class="meta">Indian Institute of Management Bangalore | <time datetime="2026">2026</time> &ndash; Present</p>
+                        <p>Studying how digital businesses are designed and run, with courses such as Website Development.</p>
+                    </article>
+                    <article class="card">
+                        <h3>BA (Hons) Spanish</h3>
+                        <p class="meta">Jawaharlal Nehru University (JNU), New Delhi | <time datetime="2026">2026</time> &ndash; Present</p>
+                        <p>Studying the Spanish language along with the culture and civilisation of the Spanish-speaking world.</p>
+                    </article>
+                </div>
+            </div>
         </section>
 
         <section id="projects">
-            <h2>Projects</h2>
-            <div class="cards">
-                <article class="card">
+            <div class="wrap">
+                <h2>Projects</h2>
+                <article class="card card-feature">
                     <h3>This resume website</h3>
-                    <p>Built from scratch for my Website Development course at IIM Bangalore. It uses semantic HTML, a flexbox navigation bar, a grid of cards and a responsive layout.</p>
+                    <p>Built for my Website Development course at IIM Bangalore. It uses semantic HTML, a sticky flexbox navigation bar, CSS grid cards, a three-colour palette and a responsive layout for phones.</p>
                     <p class="tools">Tools: HTML, CSS, GitHub Pages</p>
-                </article>
-                <article class="card card-muted">
-                    <h3>More coming soon</h3>
-                    <p>Projects from my courses and activities will be added here as I build them.</p>
                 </article>
             </div>
         </section>
 
         <section id="interests">
-            <h2>Interests</h2>
-            <ul class="tags">
-                <li>Reading</li>
-                <li>Learning new things</li>
-                <li>Interacting with new people</li>
-                <li>Challenging myself</li>
-            </ul>
+            <div class="wrap">
+                <h2>Interests</h2>
+                <ul class="tags">
+                    <li>Reading</li>
+                    <li>Learning new things</li>
+                    <li>Interacting with new people</li>
+                    <li>Challenging myself</li>
+                </ul>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Saksham Singh</p>
+        <div class="wrap">
+            <p>&copy; 2026 Saksham Singh</p>
+            <p>Built with HTML and CSS</p>
+        </div>
     </footer>
 </body>
 </html>
